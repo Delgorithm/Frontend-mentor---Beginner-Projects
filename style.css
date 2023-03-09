@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100svh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+img{
+    width: min(400px, 600px);
+    height: min(600px, 800px);
+}
+
+.right-side{
+    background-color: white;
+    padding: 10% 0;
+    width: min(400px, 600px);
+    height: min(600px, 800px);
+    overflow: hidden;
+    padding: min(40px, 100px);
+}
+
+
+.product-category{
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.product-name{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.product-description{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 40px;
+    word-spacing: 10px;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.product-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    word-spacing: 20px;
+}
+
+.product-old-price{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserra', serif;
+    margin-left: min(30px, 60px);
+    font-weight: 400;
+}
+
+.btn{
+    color: white;
+    font-family: 'Montserra', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color:hsl(158, 36%, 37%);
+    padding: 20px;
+    width: min(100%);
+    border-radius: 10px;
+    border-color: hsl(158, 36%, 37%);
+    margin-top: 20px;
+}
+
+svg{
+    margin-right: 20px;
+}
+
+.btn:hover{
+    background-color: hsl(158, 63%, 15%);
+}
+
+.attribution{
+    position: absolute;
+    bottom: min(1%);
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    img{
+        width: min(350px, 600px);
+        height: min(450px, 800px);
+        border-radius: 10px;
+    }
+
+    .right-side{
+        width: min(350px, 600px);
+        height: min(550px, 800px);
+        padding: min(20px);
+        border-radius: 10px;
+        
+    }
+}
